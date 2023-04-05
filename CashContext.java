@@ -9,6 +9,7 @@ public class CashContext {
     private ISale cs;//声明一个ISale接口对象
 
     public CashContext(int cashType) {
+
         IFactory fs = null;
         switch (cashType) {
             case 1 -> fs = new CashRebateReturnFactory(1, 0, 0);//正常收费
